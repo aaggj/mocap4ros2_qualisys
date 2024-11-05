@@ -42,5 +42,5 @@ jobs:
         with:
           package-name: qualisys_driver
           target-ros2-distro: ${{ matrix.ros_distribution }}
-          vcs-repo-file-url: "https://raw.githubusercontent.com/aaggj/mocap4ros2_qualisys/rolling/dependency_repos.repos"
+          vcs-repo-file-url: "https://raw.githubusercontent.com/aaggj/mocap4ros2_qualisys/rep-mocap/dependency_repos.repos"
           skip-tests: true
