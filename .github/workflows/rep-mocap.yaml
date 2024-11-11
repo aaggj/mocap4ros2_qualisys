@@ -16,10 +16,7 @@ jobs:
         os: [ubuntu-24.04]
       fail-fast: false
     steps:
-      - name: Repo checkout
-        uses: actions/checkout@v3
-        with:
-          path: ros_ws/src
+      - uses: actions/checkout@v2
       - name: Setup ROS 2
         uses: ros-tooling/setup-ros@0.7.9
         with:
@@ -27,7 +24,7 @@ jobs:
       - name: Install requirements
         run: pip3 install requests
       - name: Build and Test
-        uses: ros-tooling/action-ros-ci@0.3.15
+        uses: ros-tooling/action-ros-ci@0.3.13
         with:
           package-name: qualisys_driver
           target-ros2-distro: rolling
