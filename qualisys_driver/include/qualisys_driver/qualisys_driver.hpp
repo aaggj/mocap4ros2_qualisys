@@ -98,7 +98,8 @@ private:
   int n_markers_;
   int n_unlabeled_markers_;
   std::shared_ptr<rclcpp::Client<lifecycle_msgs::srv::ChangeState>> client_change_state_;
-  rclcpp_lifecycle::LifecyclePublisher<mocap_interfaces::msg::MarkerArray>::SharedPtr mocap_markers_pub_;
+  rclcpp_lifecycle::LifecyclePublisher<mocap_interfaces::msg::MarkerArray>::SharedPtr
+    mocap_markers_pub_;
   rclcpp_lifecycle::LifecyclePublisher<mocap_interfaces::msg::RigidBodyArray>::SharedPtr
     mocap_rigid_bodies_pub_;
   rclcpp_lifecycle::LifecyclePublisher<std_msgs::msg::Empty>::SharedPtr update_pub_;
